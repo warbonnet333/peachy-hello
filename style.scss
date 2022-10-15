@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+$mainFont: 'Space Grotesk', sans-serif;
+$secondFont: 'Red Hat Display', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mainFont;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 9px 29px;
+  border: 1px solid #616B6D;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+body {
+  background: #F0F9F6;
+  color: #0C1C1F;
+  height: 300vh;
+  min-height: 50vw;
+}
+
+.main {
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  top: 40px;
+  left: 48px;
+  right: 48px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  justify-content: space-between;
+
+  &--item {
+    width: 100%;
+  }
+
+  &--logo {
+    &_link {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  &--name {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &--nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-gap: 28px;
+
+    &_link {
+      font-family: $secondFont;
+    }
+  }
+}
+
+.scroll--trigger {
+  position: fixed;
+  bottom: 56px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #616B6D;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 10;
+
+  &::before {
+    content: '';
+    display: block;
+    margin-right: 16px;
+    width: 16px;
+    height: 28px;
+    background-image: url("./images/icons/scroll-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.pill {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  &--border {
+    position: absolute;
+    height: 280px;
+    width: 168px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(12, 28, 31, 0.2);
+    border-radius: 338px;
+
+    &_middle {
+      height: 344px;
+      width: 224px;
+      border: 1px solid rgba(12, 28, 31, 0.12);
+    }
+
+    &_outer {
+      height: 416px;
+      width: 280px;;
+      border: 1px solid rgba(12, 28, 31, 0.08);
+    }
+  }
+
+  &--img {
+    height: 148px;
+    width: 60px;
+  }
+}
+
+.bottle {
+  position: fixed;
+  left: 50%;
+  top: 51%;
+
+  &--up {
+    width: 288px;
+    height: 122px;
+    z-index: 3;
+    transform: translate(-50%, -249%);
+  }
+
+  &--down {
+    width: 345px;
+    height: 503px;
+    z-index: 2;
+    transform: translate(-50%, -43%);
+  }
+}

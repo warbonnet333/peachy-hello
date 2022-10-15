@@ -6,8 +6,47 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Peachy Test</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<header class="header">
+    <div class="header--item header--logo">
+        <a class="header--logo_link" href="./index.html">Peachy <span>Test Task</span></a>
+    </div>
+    <div class="header--item header--name">Frontend Developer</div>
+    <div class="header--item header--nav">
+        <a href="#" class="header--nav_link">Cart (<span>0</span>)</a>
+        <a href="#" class="header--nav_link btn">START NOW</a>
+    </div>
+
+</header>
+
+<div class="main">
+
+    <div class="pill pill--wrapper">
+        <div class="pill--border pill--border_outer"></div>
+        <div class="pill--border pill--border_middle"></div>
+        <div class="pill--border pill--border_inner"></div>
+    </div>
+    <div class="pill pill--img">
+        <img src="./images/pill-img.png" alt="pill">
+    </div>
+
+    <div class="bottle bottle--down">
+        <img src="./images/down.png" alt="Down">
+    </div>
+
+    <div class="bottle bottle--up">
+        <img src="./images/up.png" alt="Up">
+    </div>
+
+    <div class="scroll--trigger">Scroll for view more...</div>
+    <div class="scroll--detect"></div>
+</div>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script src="./index.js"></script>
 </html>
